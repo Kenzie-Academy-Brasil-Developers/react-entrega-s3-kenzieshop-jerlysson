@@ -11,7 +11,7 @@ const Header = () => {
   const cart = useSelector((store) => store.cart);
   return (
     <BoxHeader>
-      <h1> Kenzie SuperKey</h1>
+      <h1> Kenzie SuperCell</h1>
       <DivMenu>
         <form>
           <input placeholder="Oque esta Procurando?" />

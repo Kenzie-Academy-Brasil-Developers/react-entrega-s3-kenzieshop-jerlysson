@@ -8,12 +8,12 @@ import { CardProduct } from "./style";
 const Product = ({ product, isRemovable = false }) => {
   const dispatch = useDispatch();
 
-  const { id, name, price, image_link, description } = product;
+  const { id, title, price, image, description } = product;
 
   return (
     <CardProduct>
-      <h3>{name}</h3>
-      <img src={image_link} alt={name} />
+      <h3>{title}</h3>
+      <img src={image} alt={title} />
       <div>
         <p>{description}</p>
       </div>

@@ -1,14 +1,15 @@
-import axios from "axios";
+// import axios from "axios";
+import { Stock } from "../../../assets/Stock";
+//  axios
+//    .get("https://makeup-api.herokuapp.com/api/v1/products.json")
+// .then((res) => {
+//     localStorage.setItem("@products", JSON.stringify(res.data));
+//   }, [])
+//   .catch((_) => console.log());
 
-axios
-  .get("https://makeup-api.herokuapp.com/api/v1/products.json")
-  .then((res) => {
-    localStorage.setItem("@products", JSON.stringify(res.data));
-  })
-  .catch((err) => console.log(err));
-const initialState = JSON.parse(localStorage.getItem("@products")) || [];
+// const initialState = JSON.parse(localStorage.getItem("@products")) || [];
 
-const productsReducer = (state = initialState, action) => {
+const productsReducer = (state = Stock, action) => {
   return state;
 };
 
