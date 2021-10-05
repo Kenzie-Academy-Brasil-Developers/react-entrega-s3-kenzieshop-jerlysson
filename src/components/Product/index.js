@@ -10,17 +10,15 @@ const Product = ({ product, isRemovable = false }) => {
 
   const { id, name, price, image_link, description } = product;
 
-  const desc = description;
-
   return (
     <CardProduct>
       <h3>{name}</h3>
       <img src={image_link} alt={name} />
       <div>
-        <p>{desc}</p>
+        <p>{description}</p>
       </div>
       <div>
-        <h3>Valor: {price}</h3>
+        <h3>Valor: {price} R$</h3>
         <span>Desconto: {0}</span>
       </div>
       {isRemovable ? (
