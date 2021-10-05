@@ -5,8 +5,7 @@ import { CartBox, CartContainer, PriceBox } from "./style";
 const Cart = () => {
   const cart = useSelector((store) => store.cart);
 
-  const Total = cart.reduce((total, item) => total + +item.price, 0);
-
+  const Total = cart.reduce((total, item) => total + item.price, 0);
   return (
     <CartContainer>
       <h2>Carrinho</h2>
