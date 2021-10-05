@@ -4,7 +4,7 @@ export const CardProduct = styled.div`
   box-sizing: border-box;
   border: 1px solid black;
   width: 200px;
-  height: 250px;
+  height: 270px;
   margin: 3px;
   display: flex;
   flex-direction: column;
@@ -36,5 +36,9 @@ export const CardProduct = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    p {
+      overflow-y: auto;
+      height: 40px;
+    }
   }
 `;

@@ -10,11 +10,11 @@ export const MainContainer = styled.main`
 export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
+  max-width: 1200px;
+  flex-wrap: wrap;
+
   @media (max-width: 450px) {
     flex-direction: column;
     align-items: center;
-  }
-  @media (max-width: 860px) {
-    flex-wrap: wrap;
   }
 `;

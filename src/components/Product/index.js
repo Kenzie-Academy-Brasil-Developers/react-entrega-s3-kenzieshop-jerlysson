@@ -8,16 +8,20 @@ import { CardProduct } from "./style";
 const Product = ({ product, isRemovable = false }) => {
   const dispatch = useDispatch();
 
-  const { id, name, price, image, discount, desc } = product;
+  const { id, name, price, image_link, description } = product;
+
+  const desc = description;
 
   return (
     <CardProduct>
       <h3>{name}</h3>
-      <img src={image} alt={name} />
-      <p>{desc}</p>
+      <img src={image_link} alt={name} />
+      <div>
+        <p>{desc}</p>
+      </div>
       <div>
         <h3>Valor: {price}</h3>
-        <span>Desconto: {discount}</span>
+        <span>Desconto: {0}</span>
       </div>
       {isRemovable ? (
         <button onClick={() => dispatch(removeToCartThunk(id))}>Delete</button>

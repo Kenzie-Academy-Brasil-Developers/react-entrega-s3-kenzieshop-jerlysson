@@ -11,14 +11,14 @@ const Header = () => {
   const cart = useSelector((store) => store.cart);
   return (
     <BoxHeader>
-      <h1> Kenzie SuperShop</h1>
+      <h1> Kenzie SuperKey</h1>
       <DivMenu>
         <form>
           <input placeholder="Oque esta Procurando?" />
         </form>
         <ul>
           <li onClick={() => NextPage("/")}>HOME</li>
-          <li onClick={() => NextPage("/")}>Adcionar Produto</li>
+          <li onClick={() => NextPage("/")}>Categoria</li>
           <li onClick={() => NextPage("/cart")}>Carrinho</li>
           {cart.length > 0 && <AlertCart>{cart.length}</AlertCart>}
         </ul>

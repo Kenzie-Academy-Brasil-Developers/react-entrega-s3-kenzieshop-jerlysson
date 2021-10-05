@@ -8,7 +8,7 @@ export const BoxHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 160px;
-  background: linear-gradient(0deg, #0000ff14, blue);
+  background: linear-gradient(0deg, #0000ff14, #ee7afd);
   h1 {
     padding-top: 10px;
     font-size: 40px;
