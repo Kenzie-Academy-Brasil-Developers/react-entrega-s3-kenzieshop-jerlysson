@@ -10,9 +10,9 @@ const Cart = () => {
     <CartContainer>
       <h2>Carrinho</h2>
       <PriceBox>
-        <span> Valor do Carrinho:</span> <p>{Total} R$</p>
+        <span> Valor do Carrinho:</span> <p>{Total.toFixed(2)} R$</p>
         <span>Total a Pagar: </span>
-        <p>{Total} R$</p>
+        <p>{Total.toFixed(2)} R$</p>
       </PriceBox>
       <CartBox>
         {cart.map((prod) => (
